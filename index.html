@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   
+   <title>Suit Game</title>
+   
+   
+</head>
+<body>
+   
+   <div class="container">
+      <h1>Total skor</h1>
+      <h3>kamu <span id="skor-kamu">0</span> <span id="skor-com">0</span> com</h3>
+      <!-- user select -->
+      <div class="user_action" id="user_action">
+         <label for="user_select">user choice:</label>
+         <select name="user_select" id="user_select">
+            <option value="batu">batu</option>
+            <option value="gunting">gunting</option>
+            <option value="kertas">kertas</option>
+         </select>
+         <button type="submit" id="submitBtn">suit</button>
+      </div>
+      
+      <!-- Menyimpan hasil -->
+      <div class="hasil" id="hasil">
+         <div class="player-option">
+            <p id="player"></p>
+         </div>
+         <h3>vs</h3>
+         <div id="com-option">
+            <p id="com"></p>
+         </div>
+         <p id="note"></p>
+      </div>
+   </div>
+   
+   
+   <script src="main.js"></script>
+</body>
+</html>
